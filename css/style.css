@@ -78,6 +78,13 @@ h1 {
 }	
 
 /* About components */
+.forty {
+	background-color: #edefed;
+	border-bottom: 1px solid #05080d; 
+	margin-bottom: 1rem;
+	overflow: auto;
+}
+
 .about .overlapimg {
 	margin-top: -5rem;
 	float: right;
@@ -116,21 +123,14 @@ p {
 	background-color: #4c6166;
 	text-align: center;
 	padding-bottom: 5rem;
+	overflow: auto;
 }
 
 .connect p {
  	color: #edefed;
  }
 
- h5 {
- 	font-family: 'Muli', sans-serif;
- 	color: #edefed;
- 	font-size: 1rem;
- 	text-align: center;
- 	margin-top: 5rem;
- }
-
- /* Social Icons */
+/* Social Icons */
  .connect .icons >li {
  	display: inline-block;
  	border: 1px solid #edefed;
