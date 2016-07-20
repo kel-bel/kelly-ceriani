@@ -84,6 +84,7 @@ h1 {
 	width: 40%;
 	height: 32rem;
 	background-color: #4c6166;
+	overflow: auto;
 }
 
 h3 {
@@ -95,7 +96,8 @@ h3 {
 }
 
 .about .describe {
-	height: 24rem;
+	background-color: #edefed; 
+	height: 27rem;
 	width: 60%;
 	float: left;
 }
@@ -108,3 +110,44 @@ p {
 	margin-top: 4rem;
 	padding: 0 5rem;
 }
+
+/* Footer Appearance */
+.connect {
+	background-color: #4c6166;
+	text-align: center;
+	padding-bottom: 5rem;
+}
+
+.connect p {
+ 	color: #edefed;
+ }
+
+ h5 {
+ 	font-family: 'Muli', sans-serif;
+ 	color: #edefed;
+ 	font-size: 1rem;
+ 	text-align: center;
+ 	margin-top: 5rem;
+ }
+
+ /* Social Icons */
+ .connect .icons >li {
+ 	display: inline-block;
+ 	border: 1px solid #edefed;
+	border-radius: 1.25rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	margin: 1.25rem 5px;
+	text-align: center;
+	padding: 0.625rem 0;
+ }
+
+ .connect .icons >li:hover {
+ 	cursor: pointer;
+ }
+
+ .connect .linkedin,
+ .connect .behance,
+ .connect .instagram {
+ 	color: #edefed;
+ }
