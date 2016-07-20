@@ -26,6 +26,11 @@ nav {
 	margin: 0 2rem;
 }
 
+hr {
+	color: #05080d;
+	margin-left: 4rem; 
+}
+
 .content {
 	color: #05080d;
 }
@@ -79,14 +84,12 @@ h1 {
 
 /* About components */
 .forty {
-	background-color: #edefed;
-	border-bottom: 1px solid #05080d; 
 	margin-bottom: 1rem;
+	margin-top: -5rem;
 	overflow: auto;
 }
 
 .about .overlapimg {
-	margin-top: -5rem;
 	float: right;
 	width: 40%;
 	height: 32rem;
@@ -103,10 +106,10 @@ h3 {
 }
 
 .about .describe {
-	background-color: #edefed; 
-	height: 27rem;
+	height: 25rem;
 	width: 60%;
 	float: left;
+	margin-top: 5rem;
 }
 
 p {
