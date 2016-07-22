@@ -38,7 +38,7 @@ hr {
 
 /* Masthead Appearance */
 .masthead {
-	background-image: url('//kel-bel.github.io/kelly-ceriani/images/masthead-background.jpg');
+	background-image: url('../images/masthead-background.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
