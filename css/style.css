@@ -158,6 +158,34 @@ p {
 	padding: 0 5rem;
 }
 
+/* Pattern/Grid */
+.pattern {
+	border-bottom: #808080;
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
+
+.grid {
+	overflow: hidden;
+	padding: 0.5em 0 0 0.5em;
+	max-width: 76em;
+	margin: 0 auto;
+}
+
+.grid .li {
+	padding: 0 0.5em 0.5em 0;
+}
+
+.grid li > div {
+	background: #808080;
+	padding: 7em 2em;
+	text-align: center;
+}
+
+.grid li a {
+	color: #fff;
+}
+
 /* Footer Appearance */
 .connect {
 	background-color: #4c6166;
