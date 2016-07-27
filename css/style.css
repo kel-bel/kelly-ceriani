@@ -108,11 +108,8 @@ hr {
 }
 
 /* Logo Appearance */
-h4 {
-	color: #05080d;
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-	font-weight: 800;
+.main-navbar > .logo {
+	height: 4.375rem;
 }
 
 /* Masthead Text */
