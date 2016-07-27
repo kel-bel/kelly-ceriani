@@ -22,10 +22,6 @@ ul {
 	padding: 0;
 }
 
-nav {
-	margin: 0 2rem;
-}
-
 hr {
 	background-color: #05080d;
 	margin-left: 4rem; 
@@ -34,6 +30,10 @@ hr {
 
 .content {
 	color: #05080d;
+	min-width: 37.9rem;
+	width: 1400px;
+	padding: 0 0.938rem;
+	margin: 0 auto;
 }
 
 /* Masthead Appearance */
@@ -87,21 +87,22 @@ hr {
 
 /* Navigation Menu */
 
-.masthead .nav {
+.main-navbar .links {
 	float: right;
 	margin-top: 1.5rem;
 }
 
-.masthead .nav li {
+.main-navbar .links li {
 	display: inline-block;
 	margin-left: 1.5rem;
+	transition: color 0.5s ease;
 }
 
-.masthead .nav > .active {
+.main-navbar .links > .active {
 	font-weight: 400;
 }
 
-.masthead .nav li:hover {
+.main-navbar .links li:hover {
 	color: #2d383a;
 	cursor: pointer; 
 }
