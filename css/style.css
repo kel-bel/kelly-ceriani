@@ -169,6 +169,7 @@ p {
 .grid {
 	overflow: hidden;
 	margin: 0 auto;
+	padding: 1em 0 0 1em;
 }
 
 .grid li {
