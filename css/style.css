@@ -50,17 +50,18 @@ hr {
 
 /* CSS animation */
 .masthead #clouds {
-	position: center;
+	/* position: center;
 	height: 50rem;
 	-moz-animation:  .5s linear;
 	animation-name: clouds;
 	animation-duration: 10s;
-	animation-delay: 0;
+	animation-delay: 0; */
 }
 
-.cloud1, .cloud2, .cloud3, .cloud4 {
+img.cloud {
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	height: 50rem;
 	position: absolute;
 }
 
