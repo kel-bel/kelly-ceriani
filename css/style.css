@@ -37,7 +37,7 @@ hr {
 }
 
 /* Masthead Appearance */
-.masthead, .cloud1, .cloud2, .cloud3, .cloud4 {
+.masthead {
 	background-image: url('../images/masthead-background.JPG');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -45,6 +45,7 @@ hr {
 	height: 50rem;
 	font-family: 'Muli', sans-serif;
 	font-size: 1.5em;
+	z-index: -1;
 }
 
 /* CSS animation */
@@ -59,18 +60,28 @@ hr {
 
 .cloud1 {
 	background-image: url('../images/cloud1.png');
-}
+	z-index: 1;
+}	
 
 .cloud2 {
 	background-image: url('../images/cloud2.png');
+	z-index: 2;
 }
 
 .cloud3 {
 	background-image: url('../images/cloud3.png');
+	z-index: 3;
 }
 
 .cloud4 {
 	background-image: url('../images/cloud4.png');
+	z-index: 4;
+}
+
+.cloud1, .cloud2, .cloud3, .cloud4 {
+	background-size: cover;
+	height: 50rem;
+	position: absolute;
 }
 
 @keyframes clouds {
