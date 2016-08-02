@@ -58,10 +58,7 @@ hr {
 	animation-delay: 0;
 }
 
-.cloud1 {
-	background-image: url('../images/cloud1.png');
-	z-index: 1;
-}	
+
 
 .cloud2 {
 	background-image: url('../images/cloud2.png');
