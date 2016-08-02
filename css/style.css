@@ -97,10 +97,9 @@ hr {
 }
 
 /* Navigation Menu */
-
 .main-navbar .links {
 	float: right;
-	margin-top: 1.5rem;
+	margin-top: 1.9rem;
 }
 
 .main-navbar .links li {
@@ -119,9 +118,11 @@ hr {
 }
 
 /* Logo Appearance */
-.main-navbar > .logo {
-	height: 4.375rem;
+img.logo {
+	display: inline-block;
+	margin-top: 1.2rem;
 }
+
 
 /* Masthead Text */
 h1 {
