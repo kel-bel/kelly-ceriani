@@ -38,14 +38,21 @@ hr {
 
 /* Masthead Appearance */
 .masthead {
-	background-image: url('../images/masthead-background.JPG');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	height: 50rem;
 	font-family: 'Muli', sans-serif;
 	font-size: 1.5em;
+}
+
+.masthead .mastback {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	z-index: -1;
+	position: relative;
+}
+
+img.cloud {
+	position: absolute;
 }
 
 /* CSS animation */
@@ -56,13 +63,6 @@ hr {
 	animation-name: clouds;
 	animation-duration: 10s;
 	animation-delay: 0; */
-}
-
-img.cloud {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
 }
 
 @keyframes clouds {
