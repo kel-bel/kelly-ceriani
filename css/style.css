@@ -38,7 +38,7 @@ hr {
 
 /* Masthead Appearance */
 .masthead {
-	background-image: url('../images/masthead-background.jpg');
+	background-image: url('../images/masthead-background.JPG');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -53,7 +53,7 @@ hr {
 }
 
 /* CSS animation */
-.masthead #clouds {
+.masthead #cloud {
 	/* position: center;
 	height: 50rem;
 	-moz-animation:  .5s linear;
@@ -62,7 +62,7 @@ hr {
 	animation-delay: 0; */
 }
 
-@keyframes clouds {
+@keyframes cloud {
 	0% {
 
 	}
