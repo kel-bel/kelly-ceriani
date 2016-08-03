@@ -46,14 +46,16 @@ hr {
 	font-family: 'Muli', sans-serif;
 	font-size: 1.5em;
 	z-index: -1;
+	overflow: hidden;
+	max-height: 800px;
 }
 
 .cloud {
-	position: absolute;
+	position: relative;
 }
 
 /* CSS animation */
-.masthead #cloud {
+.masthead #clouds {
 	/* position: center;
 	height: 50rem;
 	-moz-animation:  .5s linear;
@@ -62,7 +64,7 @@ hr {
 	animation-delay: 0; */
 }
 
-@keyframes cloud {
+@keyframes clouds {
 	0% {
 
 	}
