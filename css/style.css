@@ -43,21 +43,19 @@ hr {
 	font-size: 1.5em;
 }
 
-.masthead .mastback {
+.cloud {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	z-index: -1;
-	position: relative;
-}
-
-img.cloud {
 	position: absolute;
 }
 
 /* CSS animation */
 .masthead #clouds {
 	/* position: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 50rem;
 	-moz-animation:  .5s linear;
 	animation-name: clouds;
