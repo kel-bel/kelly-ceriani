@@ -6,7 +6,7 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
 	line-height: 1;
-	background-color: #edefed 
+	background-color: #edefed; 
 }
 
 *, *:before, *:after {
@@ -14,7 +14,7 @@ html, body {
 }
 
 div {
-	/* border: 1px solid chocolate; */ 
+	border: 1px solid chocolate; 
 }
 
 ul {
@@ -37,21 +37,41 @@ hr {
 }
 
 /* Masthead Appearance */
-.masthead {
-	background-image: url('../images/masthead-background.JPG');
+.masthead{
+	font-family: 'Muli', sans-serif;
+	font-size: 1.5em;
+}
+
+.container {
+	background-image: url('../images/masthead-background.JPG'); 
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 50rem;
-	font-family: 'Muli', sans-serif;
-	font-size: 1.5em;
 	z-index: -1;
 	overflow: hidden;
 	max-height: 800px;
 }
 
-.cloud {top:0;left:0;/* float: left; */}
-/*
+.container > div {
+	float: left;
+	width: 100%;
+	height: 50rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.cloud {
+	background-image: 
+	url('../images/cloud-1.png'),
+	url('../images/cloud-2.png'),
+	url('../images/cloud3.png'),
+	url('../images/cloud4.png');
+	background-blend-mode: multiply; 
+	background-size: cover; 
+}
+
 @keyframes cloudsTest {
   0% {
   opacity:1;
@@ -68,18 +88,24 @@ opacity:0;
 }
 
 .cloud img.cloud1 {
-animation-name: cloudsTest;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 10s;
-animation-direction: alternate;
+	animation-name: cloudsTest;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+	animation-direction: alternate;
 }
+
 .cloud img.cloud2 {
-    transform: translate(0,-1350px);
+    animation-name: cloudsTest;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+	animation-direction: alternate;
+    /*transform: translate(0,-1350px);
     -webkit-transform: translate(0,-1350px);
     -o-transform: translate(0,-1350px); 
-    -moz-transform: translate(0,-1350px);
-}*/
+    -moz-transform: translate(0,-1350px);*/
+}
 
 /* Navigation Menu */
 .main-navbar .links {
