@@ -14,7 +14,7 @@ html, body {
 }
 
 div {
-	border: 1px solid chocolate; 
+	/*border: 1px solid chocolate;*/ 
 }
 
 ul {
@@ -40,9 +40,6 @@ hr {
 .masthead{
 	font-family: 'Muli', sans-serif;
 	font-size: 1.5em;
-}
-
-.container {
 	background-image: url('../images/masthead-background.JPG'); 
 	background-position: center;
 	background-repeat: no-repeat;
@@ -53,23 +50,26 @@ hr {
 	max-height: 800px;
 }
 
-.container > div {
-	float: left;
-	width: 100%;
+.container {
+	position: relative;
 	height: 50rem;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	width: 100%;
+	margin: 0 auto 10px;
 }
 
-.cloud {
-	background-image: 
-	url('../images/cloud-1.png'),
-	url('../images/cloud-2.png'),
-	url('../images/cloud3.png'),
-	url('../images/cloud4.png');
-	background-blend-mode: multiply; 
-	background-size: cover; 
+.container img {
+	position: absolute;	
+	left: 0;
+}
+
+img.cloud-1, img.cloud-2, img.cloud-3, img.cloud-4 {
+    height: 50rem;
+    width: 100%;
+    animation-name: cloudsTest;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+	animation-direction: alternate;
 }
 
 @keyframes cloudsTest {
@@ -87,25 +87,12 @@ opacity:1;
 }
 }
 
-.cloud {
-	animation-name: cloudsTest;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-duration: 30s;
-	animation-direction: alternate;
-}
-
-.cloud img.cloud2 {
-    animation-name: cloudsTest;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-duration: 20s;
-	animation-direction: alternate;
-    /*transform: translate(0,-1350px);
+img.cloud-2 {
+	transform: translate(0,-1350px);
     -webkit-transform: translate(0,-1350px);
     -o-transform: translate(0,-1350px); 
     -moz-transform: translate(0,-1350px);*/
-}
+} 
 
 /* Navigation Menu */
 .main-navbar .links {
@@ -117,6 +104,10 @@ opacity:1;
 	display: inline-block;
 	margin-left: 1.5rem;
 	transition: color 0.5s ease;
+}
+
+ul.links {
+	float: right;
 }
 
 .main-navbar .links > .active {
@@ -131,7 +122,8 @@ opacity:1;
 /* Logo Appearance */
 img.logo {
 	display: inline-block;
-	margin-top: 1.2rem;
+	margin-top: 0.725rem;
+	margin-left: 380px;
 }
 
 
