@@ -110,7 +110,7 @@ ul.links {
 	float: right;
 }
 
-ul.links li:hover {
+li:hover {
 	color: #2d383a;
 	cursor: pointer; 
 }
