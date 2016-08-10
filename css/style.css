@@ -110,11 +110,7 @@ ul.links {
 	float: right;
 }
 
-.main-navbar .links > .active {
-	font-weight: 400;
-}
-
-.main-navbar .links li:hover {
+ul.links li:hover {
 	color: #2d383a;
 	cursor: pointer; 
 }
