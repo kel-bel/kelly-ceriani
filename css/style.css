@@ -28,36 +28,156 @@ hr {
 	height: 3px;
 }
 
-.content {
-	color: #05080d;
-	min-width: 37.9rem;
-	width: 1400px;
-	padding: 0 0.938rem;
-	margin: 0 auto;
+img {
+	border: 0;
+	vertical-align: middle;
 }
 
-/* Masthead Appearance */
-.masthead{
-	font-family: 'Muli', sans-serif;
-	font-size: 1.5em;
+h1, h2 {
+	font: 28px/28px 'Open Sans Condensed', sans-serif;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+h3 {
+    color: #E0b964;
+    font: 20px/20px 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+}
+
+p {
+	font: 16px/16px 'Open Sans Condensed', sans-serif;
+	letter-spacing: 1.5px;
+	margin: 0;
+	padding: 0;
+}
+
+a.active {
+	color: #E0b964;
+}
+
+.width {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	width: 960px;
+}
+
+/* Fixed Nav-bar */
+#container > header {
+	background: #4c6166;
+	border-bottom: 5px solid #d0d0d0;
+	box-shadow: 0 1px 0 #b1b0b0;
+	height: 72px;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	opacity: 0.8;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in; 
+}
+
+a:visited {
+	color: #000;
+}
+
+#container > header hgroup {
+	float: left;
+	line-height: 60px;
+	height: 60px;
+	position: relative;
+	padding-left: 140px;
+}
+
+#container > header hgroup:before {
+	background: url('../images/quill-logo-finished.png') center 4px no-repeat;
+	border: none;
+	content: '';
+	height: 140px;
+	padding: 5px;
+	position: absolute;
+	left: 0px;
+	top: -25px;
+	width: 130px;
+}
+
+#container > header a hgroup h1 {
+	color: #E0b964;
+}
+
+#container > header hgroup h1 {
+	color: #E0b964;
+	float: left;
+	line-height: 38px;
+	margin-right: 10px;
+	font: 30px;
+}
+
+#container > header hgroup h2 {
+	color: #000;
+	float: left;
+	line-height: 25px;
+	margin-right: 10px;
+	font-size: 24px;
+
+}
+
+/*Buttons nav-bar */
+#container > header nav {
+	float: right;
+	display: block;
+	margin-top: 4px;
+}
+
+#container > header nav a {
+	font: 28px/28px 'Open Sans Condensed', sans-serif;
+	letter-spacing: 1px;
+	line-height: 60px;
+	margin-left: 25px;
+	text-transform: uppercase;
+}
+
+#container > header nav a.active {
+	color: #E0b964;
+} 
+
+/* Image with moving Clouds */
+.masthead {
 	background-image: url('../images/masthead-background.JPG'); 
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 50rem;
 	z-index: -1;
 	overflow: hidden;
-	max-height: 800px;
+	max-height: 700px;
 }
 
-.container {
+.cloudyday {
 	position: relative;
 	height: 50rem;
 	width: 100%;
 	margin: 0 auto 10px;
 }
 
-.container img {
+img.highlight {
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 700px;
+}
+
+.cloudyday img {
 	position: absolute;	
 	left: 0;
 }
@@ -94,125 +214,125 @@ img.cloud-2 {
     -moz-transform: translate(0,-1350px);*/
 } 
 
-/* Navigation Menu */
-.main-navbar .links {
-	float: right;
-	margin-top: 1.9rem;
-}
-
-.main-navbar .links li {
-	display: inline-block;
-	margin-left: 1.5rem;
-	transition: color 0.5s ease;
-}
-
-ul.links {
-	float: right;
-}
-
-li:hover {
-	color: #2d383a;
-	cursor: pointer; 
-}
-
-/* Logo Appearance */
-img.logo {
-	display: inline-block;
-	margin-top: 0.725rem;
-	margin-left: 380px;
-}
-
-
-/* Masthead Text */
-h1 {
-	font-family: 'Philosopher', sans-serif;
-	font-size: 6rem;
-	color: #edefed;;
-}	
-
-/* About components */
-.forty {
-	margin-bottom: 1rem;
-	margin-top: -5rem;
-	overflow: auto;
-}
-
-.about .overlapimg {
-	float: right;
-	width: 40%;
-	height: 32rem;
-	background-color: #4c6166;
-	overflow: auto;
-}
-
-h3 {
-	font-family:; 'Philosopher', sans-serif;
-	font-size: 4rem;
-	text-align: center;
-	margin-top: 12rem;
-	color: #edefed;
-}
-
-.about .describe {
-	height: 25rem;
-	width: 60%;
-	float: left;
-	margin-top: 5rem;
-}
-
-p {
-	font-family: 'Muli', sans-serif;
-	font-size: 1.4rem;
-	color: #05080d;
-	text-align: center;
-	margin-top: 4rem;
-	padding: 0 5rem;
-}
-
-/* Pattern/Grid */
+/* Pattern Porfolio Field */
 .pattern {
-	border-bottom: #808080;
-	margin-bottom: 2rem;
-	margin-top: 3rem;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 30px 0 0;
+}
+
+.pattern article {
+	background: #d0d0d0;
+	border: 1px solid #b9b9b9;
+	border-radius: 150px;
+	float: left;
+	margin: 0 0 30px 30px;
 	overflow: hidden;
+	padding: 9px;
+	position: relative;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	width: 300px;
+	height: 300px;
 }
 
-.grid {
-	overflow: hidden;
-	margin: 0 auto;
-	padding: 1em 0 0 1em;
+.pattern article:nth-child(3n+1) {
+	clear: left;
+	margin-left: 0;
 }
 
-.grid li {
-	padding: 0 1em 1em 0;
+.pattern article header {
+	position: relative;
+	width: 280px;
+	height:280px;
+	z-index: 2;
 }
 
-.grid li > div {
-	background: #808080;
-	padding: 10em 2em;
+.pattern article header .details {
+	background: #4c6166;
+	padding: 15px 0;
+	position: absolute;
+	top: 170px;
+	left: -10px;
 	text-align: center;
+	transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	width: 300px;
+	opacity: 0.9;
+	padding: 2px 30px;
+	height: 200px;
+	display: none;
 }
 
-.grid li a {
-	color: #fff;
+.pattern article header .details h3{
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+
+.pattern article header .details p{
+	color: #E0b964;
+	line-height: 16px;
+}
+
+.pattern article img {
+	border-radius: 140px;
+	position: absolute;
+	top: 9px;
+	left: 9px;
+}
+
+/* Hover image shows */
+.pattern article img.clr {
+	display: none;
 }
 
 /* Footer Appearance */
-.connect {
+footer {
 	background-color: #4c6166;
-	text-align: center;
-	padding-bottom: 5rem;
+	border-top: 5px solid #d0d0d0;
+	box-shadow: 0 -1px 0 #b1b0b0;
+	padding: 30px 120px 0 0;
 	overflow: auto;
+	position: relative;
 }
 
-.connect p {
- 	color: #edefed;
- 	font-size: 1.2rem;
- }
+footer h1 {
+	margin-bottom: 20px;
+}
+
+/* Footer About */
+footer .about {
+	margin-left: 40px;
+	width: 430px;
+	float: left;
+}
+
+footer .about p {
+	color: #edefed;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 15px;
+	font-weight: 200;
+}
+
+/* Footer Lets have a chat */
+footer .letschat {
+	padding: 0;
+	position: relative;
+	width: 360px;
+	float: right;
+}
 
 /* Social Icons */
- .connect .icons >li {
+i.fa.fa-linkedin.fa-2x,
+i.fa.fa-behance.fa-2x {
  	display: inline-block;
+ 	background-color: #73868a;
     border: 3px solid #edefed;
     border-radius: 4rem;
     width: 4rem;
@@ -220,16 +340,13 @@ p {
     margin: 1.25rem 15px;
     text-align: center;
     padding: 0.9rem 0;;
+    float: left;
  }
 
- .connect .icons >li:hover {
+i.fa.fa-linkedin.fa-2x:hover,
+i.fa.fa-behance.fa-2x:hover {
+ 	color: #E0b964;
  	cursor: pointer;
- }
-
- .connect .linkedin,
- .connect .behance,
- .connect .instagram {
- 	color: #edefed;
  }
 
  /* Media Edits */
