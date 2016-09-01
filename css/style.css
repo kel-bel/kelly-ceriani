@@ -239,6 +239,11 @@ img.cloud-2 {
 	height: 300px;
 }
 
+.pattern article:hover {
+	background: #4c6166;
+	transition: 0.1s ease-in;
+}	
+
 .pattern article:nth-child(3n+1) {
 	clear: left;
 	margin-left: 0;
