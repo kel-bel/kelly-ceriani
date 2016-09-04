@@ -57,6 +57,11 @@ p {
 	padding: 0;
 }
 
+input:hover {
+	cursor: pointer;
+}
+
+
 a.active {
 	color: #E0b964;
 }
@@ -313,8 +318,9 @@ footer h1 {
 /* Footer About */
 footer .about {
 	margin-left: 40px;
-	width: 430px;
+	width: 400px;
 	float: left;
+	padding-right: 30px;
 }
 
 footer .about p {
@@ -325,12 +331,42 @@ footer .about p {
 	font-weight: 200;
 }
 
+footer .connect {
+	width: 200px;
+	float: left;
+}
+
+
 /* Footer Lets have a chat */
 footer .letschat {
 	padding: 0;
 	position: relative;
-	width: 360px;
+	width: 260px;
 	float: right;
+	margin-bottom: 40px;
+}
+
+footer .letschat form > h2 {
+	color: #E0b964;
+	font-size: 16px;
+}
+
+input {
+	width: 200px;
+	background-color: #edefed;
+	border: 1px solid #edefed;
+	border-radius: 5px;
+}
+
+input.submit {
+    width: 100px;
+    font: 16px/16px 'Open Sans Condensed', sans-serif;
+    padding: 5px 10px;
+    margin-top: 6px;
+    background-color: #73868a;
+    border: 3px solid #edefed;
+    border-radius: 50px;
+    color: #edefed;
 }
 
 /* Social Icons */
@@ -346,6 +382,7 @@ i.fa.fa-behance.fa-2x {
     text-align: center;
     padding: 0.9rem 0;;
     float: left;
+    color: #edefed;
  }
 
 i.fa.fa-linkedin.fa-2x:hover,

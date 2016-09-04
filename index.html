@@ -65,16 +65,16 @@
 					<a href="http://blacksburgmuseum.org/" class="item">
 						<header>
 							<div class="details">
-								<h3>Thesis Book</h3>
-								<p>Charcoal Drawings</p>
+								<h3>I speak for the shadows</h3>
+								<p>Thesis Documentation</p>
 							</div>
 						</header>
 						<div class="photo">
 							<div class="bw-pic">
-								<img src="images/bmcf-bw.jpg" alt="BM+CF" class="bw">
+								<img src="images/charcoal-bw.jpg" alt="Charcoal" class="bw">
 							</div>
 							<div class="clr-pic">
-								<img src="images/bmcf-clr.jpg" alt="BM+CF" class="clr">
+								<img src="images/charcoal-bw.jpg" alt="Charcoal" class="clr">
 							</div>
 						</div>
 					</a>
@@ -107,34 +107,16 @@
 						</header>
 						<div class="photo">
 							<div class="bw-pic">
-								<img src="images/portfoliowebsite-bw.JPG" alt="BM+CF" class="bw">
+								<img src="images/portfoliowebsite-bw.JPG" alt="Portfolio Website" class="bw">
 							</div>
 							<div class="clr-pic">
-								<img src="images/portfoliowebsite-clr.JPG" alt="BM+CF" class="clr">
+								<img src="images/portfoliowebsite-clr.jpg" alt="Portfolio Website" class="clr">
 							</div>
 						</div>
 					</a>
 				</article>
-				<article>
-					<a href="http://blacksburgmuseum.org/" class="item">
-						<header>
-							<div class="details">
-								<h3>Undergraduate Architecture Portfolio</h3>
-								<p>Architect</p>
-							</div>
-						</header>
-						<div class="photo">
-							<div class="bw-pic">
-								<img src="images/bmcf-bw.JPG" alt="BM+CF" class="bw">
-							</div>
-							<div class="clr-pic">
-								<img src="images/bmcf-clr.JPG" alt="BM+CF" class="clr">
-							</div>
-						</div>
-					</a>
-				</article>
-				<article>
-					<a href="http://blacksburgmuseum.org/" class="item">
+					<article>
+					<a href="#" class="item">
 						<header>
 							<div class="details">
 								<h3>Sketches Throughout Europe</h3>
@@ -143,15 +125,33 @@
 						</header>
 						<div class="photo">
 							<div class="bw-pic">
-								<img src="images/bmcf-bw.JPG" alt="BM+CF" class="bw">
+								<img src="images/travel-bw.jpg" alt="Travel Sketches" class="bw">
 							</div>
 							<div class="clr-pic">
-								<img src="images/bmcf-clr.JPG" alt="BM+CF" class="clr">
+								<img src="images/travel-bw.jpg" alt="Travel Sketches" class="clr">
 							</div>
 						</div>
 					</a>
 				</article>
-				
+				<article>
+					<a href="https://issuu.com/kellyceriani/docs/kelly_ceriani_s_architecture_portfo/1?e=16972232/30000297" class="item">
+						<header>
+							<div class="details">
+								<h3>Undergraduate Architecture Portfolio</h3>
+								<p>Architect</p>
+							</div>
+						</header>
+						<div class="photo">
+							<div class="bw-pic">
+								<img src="images/portfolio-bw.jpg" alt="Architecture Portfolio" class="bw">
+							</div>
+							<div class="clr-pic">
+								<img src="images/portfolio-clr.jpg" alt="Architecture Portfolio" class="clr">
+							</div>
+						</div>
+					</a>
+				</article>
+							
 			</div>	
 		</section>
 
@@ -159,13 +159,12 @@
 
 	<footer>
 		<div class="width">
-			<section class="about"> 
+			<div class="about"> 
 				<h1>about</h1>
 				<p>I revel in the challenge of crafting functional and innovative user engaging designs.</p>
 				<p>While implementing my clients’ desires, my design seeks to actively implement new concepts, dreams, and creative solutions. I am a dedicated and hardworking designer, passionately seeking to apply my abilities into developing new design identities.</p>
-			</section>
-			<section id="letschat" class="letschat">
-				<h1>lets have a chat!</h1>
+			</div>
+			<div class="connect">
 				<h1>connect with me</h1>
 					<a href="https://www.linkedin.com/in/kellyceriani" class="linkedin">
 						<i class="fa fa-linkedin fa-2x"></i>
@@ -173,7 +172,21 @@
 					<a href="https://www.behance.net/kelly5" class="behance">
 						<i class="fa fa-behance fa-2x"></i>
 					</a>
-			</section>
+			</div>
+			<div id="letschat" class="letschat">
+				<h1>lets have a chat!</h1>
+					<form action="send-form-email.php" method="post" name="emailform">
+						<h2>Your Name</h2>
+						<input type="text" name="name">
+						<h2>Your email</h2>
+						<input type="text" size="20" name="email">
+						<br>
+						<h2>Your message</h2>
+						<textarea name="message" maxength="1000" rows="4" cols="20"></textarea>
+						<br>
+						<input class="submit" type="submit" value="Email me!"> 
+					</form>
+			</div>
 		</div>
 	</footer>
 	
