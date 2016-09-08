@@ -177,9 +177,11 @@ a:visited {
 }
 
 img.highlight {
+   	display: block;
+	top:0; bottom:0; left:0; right:0;
+	margin: 0 auto;
     height: 400px;
-    margin-top: 200px;
-    margin-left: 700px;
+    margin-top: 250px;
 }
 
 .cloudyday img {
@@ -317,7 +319,6 @@ footer h1 {
 
 /* Footer About */
 footer .about {
-	margin-left: 40px;
 	width: 400px;
 	float: left;
 	padding-right: 30px;
@@ -352,7 +353,7 @@ footer .letschat form > h2 {
 }
 
 input {
-	width: 200px;
+	width: 300px;
 	background-color: #edefed;
 	border: 1px solid #edefed;
 	border-radius: 5px;
@@ -367,6 +368,10 @@ input.submit {
     border: 3px solid #edefed;
     border-radius: 50px;
     color: #edefed;
+}
+
+textarea {
+	width: 300px;
 }
 
 /* Social Icons */
@@ -391,27 +396,122 @@ i.fa.fa-behance.fa-2x:hover {
  	cursor: pointer;
  }
 
- /* Media Edits */
- @media all and (min-width: 27em) {
-	.grid li {
-		width: 50%;
-		float: left;
+ /* NoMAD page */
+ img.nomad {
+ 	width: 800px;
+ 	margin-top: 80px;
+}
+
+.nomadtext > h2 {
+	text-align: center;
+	color: #2C2C54;
+	text-transform: none;
+	font-size: 20px;
+}
+
+/* <====== Media Queries =====================================> */
+
+/* 960px or smaller */
+/* e.g. iPad Portrait */
+/* Portfolio with 2 column layout */
+@media screen and (max-width: 960px) {
+	#container {
+		padding: 0;
+	}
+	
+	.width {
+		padding: 0 2%;
+		width: 98%;
+	}
+
+	/*== Header ==*/
+	#container > header hgroup h1 {
+		font-size: 30px;
+		margin-top: 16px;
+	} 
+	
+	#container > header hgroup h2 {
+		display: none;
+	}
+
+	/* == Masthead Image ==*/
+	.masthead {
+		max-height: 500px;
+	}
+
+	img.highlight {
+		margin-top: 80px;
+	}
+
+	img.cloud-1, img.cloud-2, img.cloud-3, img.cloud-4 {
+		max-height: 500px;
+	}
+
+	/* == Grid Pattern Projects ==*/
+	.pattern {
+		float: none;
+		top: 0; bottom:0; left:0; right:0;
+		margin: 0 auto;
+		position: relative;
+		width: 630px;
+	}
+
+	.pattern .width {
+		padding: 0;
+		width: 100%;
+	}
+
+	#pattern article:nth-child(3n+1) {
+		clear: none;
+		margin-left: 30px;
+	}
+
+	#pattern article:nth-child(2n+1) {
+		clear: left;
+		margin-left: 0;
+	}
+
+	.pattern article header .details {
+		top: 192px;
+	}
+
+	/*== Footer ==*/
+	footer {
+		padding: 30px 0;
+		width: 100%;
+	}
+	
+	footer .about {
+		width: 100%;
+	}
+
+	footer .connect {
+		width: 100%;
+	}
+
+	footer .letschat {
+		width: 100%;
+	}
+	
+	footer .letschat input[type=text],
+	footer .letschat textarea {
+		padding: 7px 2%;
+		width: 96%;
 	}
 }
-		
-@media all and (min-width: 40em) {
-	.grid li {
-		width: 33.3333333%;
-	}
-	.grid li.wide {
-		width: 66.666666%;
+
+/* 630px or smaller */
+/* e.g. iPhone Landscape */
+/* Portfolio with 1 column layout */
+@media screen and (max-width: 630px) {
+	
+	#container > header {
+		position: relative;
 	}
 }
-@media all and (min-width: 60em) {
-	.grid li {
-		width: 33%;
-	}
-	.grid li.wide {
-		width: 50%;
-	}
+
+/* 480px or smaller */
+/* e.g. iPhone Landscape */
+/* Portfolio with 1 column layout */
+@media screen and (max-width: 480px) {
 }
