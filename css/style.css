@@ -321,7 +321,6 @@ footer h1 {
 footer .about {
 	width: 400px;
 	float: left;
-	padding-right: 30px;
 }
 
 footer .about p {
@@ -337,6 +336,11 @@ footer .connect {
 	float: left;
 }
 
+footer .connect .icons {
+	display: block;
+	top:0; bottom: 0; left:0; right: 0;
+	margin: 0 auto;
+}
 
 /* Footer Lets have a chat */
 footer .letschat {
@@ -414,7 +418,7 @@ i.fa.fa-behance.fa-2x:hover {
 /* 960px or smaller */
 /* e.g. iPad Portrait */
 /* Portfolio with 2 column layout */
-@media screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
 	#container {
 		padding: 0;
 	}
@@ -461,18 +465,22 @@ i.fa.fa-behance.fa-2x:hover {
 		width: 100%;
 	}
 
-	#pattern article:nth-child(3n+1) {
+	.pattern article {
+		background-color: #4c6166;
+	}
+
+	.pattern article:nth-child(3n+1) {
 		clear: none;
 		margin-left: 30px;
 	}
 
-	#pattern article:nth-child(2n+1) {
+	.pattern article:nth-child(2n+1) {
 		clear: left;
 		margin-left: 0;
 	}
 
 	.pattern article header .details {
-		top: 192px;
+		display: unset;
 	}
 
 	/*== Footer ==*/
@@ -503,15 +511,195 @@ i.fa.fa-behance.fa-2x:hover {
 /* 630px or smaller */
 /* e.g. iPhone Landscape */
 /* Portfolio with 1 column layout */
-@media screen and (max-width: 630px) {
+@media only screen and (max-width: 630px) {
 	
 	#container > header {
 		position: relative;
 	}
+
+	#container > header nav a {
+		margin-left: 5px;
+		font-size: 20px;
+	}
+
+	#container > header hgroup {
+		line-height: 40px;
+		height: 40px;
+	}
+
+	#container > header hgroup h1 {
+		margin-top: 5px;
+		font-size: 25px;
+	}
+	
+	/*==Masthead Appearance ==*/
+	.masthead {
+		max-height: 250px;
+	}
+
+	img.highlight {
+		display: none;
+	}
+
+	img.cloud-1, img.cloud-2, img.cloud-3, img.cloud-4 {
+		max-height: 250px;
+	}
+
+	/*== Grid Appearance ==*/
+	.pattern {
+		float: left;
+		margin: 0;
+		position: relative;
+		width: 100%;
+		padding: 2px 6px;
+	}
+
+	.pattern article {
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		background-color:  #edefed;
+		border: 0;
+		border-bottom: 1px dotted #dcdcdc;
+		border-radius: 0;
+		float: left;
+		margin: 0 0 10px;
+		overflow: hidden;
+		padding: 0 0 10px 0;
+		position: relative;
+		width: 100%;
+		height: auto;
+	}		
+	
+	.pattern article:hover {
+		background: none;
+		border: 0;
+		border-bottom: 1px solid #dcdcdc;
+	}
+	
+	.pattern article:nth-child(3n+1) {
+		clear: left;
+		margin-left: 0;
+	}
+
+	.pattern article:last-child {
+		border-bottom: 0;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.pattern article a {
+		display: block;
+	}
+
+	.pattern article .photo {
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		background: #d0d0d0;
+		border: 1px solid #b9b9b9;
+		border-radius: 50%;
+		display: inline-block;
+		padding: 4px;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 40%;
+		height: auto;
+	}
+
+	.pattern article img {
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		border-radius: 50%;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.pattern article header {		
+		mask-image: none;
+		-webkit-mask-image: none;
+		-o-mask-image: none;
+		-moz-mask-image: none;
+		position: absolute;
+		left: 45%;
+		top: 20%;
+		width: 55%;
+		height: auto;
+	}
+			
+	.pattern article header .details {
+		background: none;
+		background: none;
+		padding: 0;
+		position: relative;
+		top: 0;
+		left: 0;
+		text-align: left;
+		width: 100%;
+		height: auto;
+	}
+
+	.pattern article header h1 {
+		font-size: 40px;
+		line-height: 40px;
+		margin-bottom: 5px;
+	}
+	
+	.pattern article header p {
+		text-align: center;
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	footer {
+		margin-top: 7px;
+	}
+
+	footer .width {
+		padding: 0 4%;
+	}
+
+	footer .about {
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		width: 100%;
+	}
+
+	footer .connect .icons {
+		width: 60%;
+	}
+
+	footer .about, footer .connect, footer .letschat {
+		margin-top: 6px;
+	}
 }
+
 
 /* 480px or smaller */
 /* e.g. iPhone Landscape */
 /* Portfolio with 1 column layout */
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+	#container > header {
+		height: 100px;
+	}
+
+	#container > header hgroup:before {
+		top: -15px;
+	}
+
+	#container > header nav a.active {
+		color: #000;
+	} 
+
+	#container > header nav {
+		margin-top: 0;
+		display: inline-block;
+	}
+
 }
