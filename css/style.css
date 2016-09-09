@@ -270,15 +270,19 @@ img.cloud-2 {
 	top: 170px;
 	left: -10px;
 	text-align: center;
-	transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
 	width: 300px;
 	opacity: 0.9;
 	padding: 2px 30px;
 	height: 200px;
 	display: none;
+}
+
+.pattern article:hover header .details {
+	display:unset;
+	transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
 }
 
 .pattern article header .details h3{
@@ -303,14 +307,33 @@ img.cloud-2 {
 	display: none;
 }
 
+.pattern article:hover img.clr {
+	display: unset;
+	transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+}
+
+
+.pattern article:hover img.bw {
+	display: none;
+	transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+}
+
 /* Footer Appearance */
 footer {
 	background-color: #4c6166;
 	border-top: 5px solid #d0d0d0;
 	box-shadow: 0 -1px 0 #b1b0b0;
-	padding: 30px 120px 0 0;
+	padding: 30px 0px 0 0;
 	overflow: auto;
 	position: relative;
+	height: 500px;
+	width: 100%;
 }
 
 footer h1 {
@@ -319,8 +342,9 @@ footer h1 {
 
 /* Footer About */
 footer .about {
-	width: 400px;
+	width: 550px;
 	float: left;
+	padding: 10px;
 }
 
 footer .about p {
@@ -329,14 +353,10 @@ footer .about p {
 	line-height: 20px;
 	margin-bottom: 15px;
 	font-weight: 200;
+	padding: 10px;
 }
 
-footer .connect {
-	width: 200px;
-	float: left;
-}
-
-footer .connect .icons {
+footer .about.icons {
 	display: block;
 	top:0; bottom: 0; left:0; right: 0;
 	margin: 0 auto;
@@ -346,9 +366,10 @@ footer .connect .icons {
 footer .letschat {
 	padding: 0;
 	position: relative;
-	width: 260px;
-	float: right;
+	width: 410px;
+	float: left;
 	margin-bottom: 40px;
+	padding: 10px;
 }
 
 footer .letschat form > h2 {
@@ -357,30 +378,39 @@ footer .letschat form > h2 {
 }
 
 input {
-	width: 300px;
+	width: 380px;
 	background-color: #edefed;
 	border: 1px solid #edefed;
 	border-radius: 5px;
+	height: 30px;
 }
 
 input.submit {
-    width: 100px;
+    width: 70px;
     font: 16px/16px 'Open Sans Condensed', sans-serif;
-    padding: 5px 10px;
+    padding: 5px;
     margin-top: 6px;
     background-color: #73868a;
     border: 3px solid #edefed;
-    border-radius: 50px;
+    border-radius: 70px;
     color: #edefed;
+    text-transform: uppercase;
+    height: 70px;
+}
+
+input.submit:hover {
+	color: #E0b964;
+	border: 3px solid #E0b964;
 }
 
 textarea {
-	width: 300px;
+	width: 380px;
 }
 
 /* Social Icons */
 i.fa.fa-linkedin.fa-2x,
-i.fa.fa-behance.fa-2x {
+i.fa.fa-behance.fa-2x, 
+i.fa.fa-github.fa-2x {
  	display: inline-block;
  	background-color: #73868a;
     border: 3px solid #edefed;
@@ -395,8 +425,10 @@ i.fa.fa-behance.fa-2x {
  }
 
 i.fa.fa-linkedin.fa-2x:hover,
-i.fa.fa-behance.fa-2x:hover {
+i.fa.fa-behance.fa-2x:hover,
+i.fa.fa-github.fa-2x:hover {
  	color: #E0b964;
+ 	border: 3px solid #E0b964;
  	cursor: pointer;
  }
 
@@ -493,10 +525,6 @@ i.fa.fa-behance.fa-2x:hover {
 		width: 100%;
 	}
 
-	footer .connect {
-		width: 100%;
-	}
-
 	footer .letschat {
 		width: 100%;
 	}
@@ -517,10 +545,23 @@ i.fa.fa-behance.fa-2x:hover {
 		position: relative;
 	}
 
-	#container > header nav a {
-		margin-left: 5px;
-		font-size: 20px;
+	#container > header nav {
+		float: left;
+		display: block;
+		margin: 0;
+		padding-left: 140px;
 	}
+
+	#container > header nav a {
+		line-height: 20px;
+		font-size: 20px;
+		margin-left: 10px;
+	}
+
+	#container > header nav a.active {
+		color: #000;
+		margin-left: 0;
+	} 
 
 	#container > header hgroup {
 		line-height: 40px;
@@ -534,7 +575,7 @@ i.fa.fa-behance.fa-2x:hover {
 	
 	/*==Masthead Appearance ==*/
 	.masthead {
-		max-height: 250px;
+		max-height: 200px;
 	}
 
 	img.highlight {
@@ -592,6 +633,10 @@ i.fa.fa-behance.fa-2x:hover {
 		display: block;
 	}
 
+	.pattern article a:hover {
+		border: 0;
+	}
+
 	.pattern article .photo {
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -620,6 +665,10 @@ i.fa.fa-behance.fa-2x:hover {
 		height: auto;
 	}
 
+	.patter article img.clr {
+		display: none;
+	}
+
 	.pattern article header {		
 		mask-image: none;
 		-webkit-mask-image: none;
@@ -627,7 +676,7 @@ i.fa.fa-behance.fa-2x:hover {
 		-moz-mask-image: none;
 		position: absolute;
 		left: 45%;
-		top: 20%;
+		top: 10%;
 		width: 55%;
 		height: auto;
 	}
@@ -642,6 +691,10 @@ i.fa.fa-behance.fa-2x:hover {
 		text-align: left;
 		width: 100%;
 		height: auto;
+	}
+
+	.pattern article:hover header .details {
+		top: 0;
 	}
 
 	.pattern article header h1 {
@@ -671,11 +724,7 @@ i.fa.fa-behance.fa-2x:hover {
 		width: 100%;
 	}
 
-	footer .connect .icons {
-		width: 60%;
-	}
-
-	footer .about, footer .connect, footer .letschat {
+	footer .about, footer .letschat {
 		margin-top: 6px;
 	}
 }
@@ -685,21 +734,5 @@ i.fa.fa-behance.fa-2x:hover {
 /* e.g. iPhone Landscape */
 /* Portfolio with 1 column layout */
 @media only screen and (max-width: 480px) {
-	#container > header {
-		height: 100px;
-	}
-
-	#container > header hgroup:before {
-		top: -15px;
-	}
-
-	#container > header nav a.active {
-		color: #000;
-	} 
-
-	#container > header nav {
-		margin-top: 0;
-		display: inline-block;
-	}
 
 }
