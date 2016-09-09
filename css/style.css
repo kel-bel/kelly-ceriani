@@ -555,7 +555,7 @@ i.fa.fa-github.fa-2x:hover {
 	#container > header nav a {
 		line-height: 20px;
 		font-size: 20px;
-		margin-left: 5px;
+		margin-left: 10px;
 	}
 
 	#container > header nav a.active {
@@ -705,11 +705,10 @@ i.fa.fa-github.fa-2x:hover {
 	
 	.pattern article header p {
 		text-align: center;
-		font-size: 16px;
+		font-size: 20px;
 		line-height: 20px;
 	}
-	
-	/*== Footer ==*/
+
 	footer {
 		margin-top: 7px;
 	}
@@ -725,6 +724,11 @@ i.fa.fa-github.fa-2x:hover {
 		width: 100%;
 	}
 
+	footer .letschat input[type="text"],
+	footer .letschat input[type="email"] {
+		width: 95%;
+	}
+
 	footer .about, footer .letschat {
 		margin-top: 6px;
 	}
@@ -735,5 +739,8 @@ i.fa.fa-github.fa-2x:hover {
 /* e.g. iPhone Landscape */
 /* Portfolio with 1 column layout */
 @media only screen and (max-width: 480px) {
-
+	
+	#container > header nav {
+		display: none;
+	}
 }
