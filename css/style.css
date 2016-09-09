@@ -555,7 +555,7 @@ i.fa.fa-github.fa-2x:hover {
 	#container > header nav a {
 		line-height: 20px;
 		font-size: 20px;
-		margin-left: 10px;
+		margin-left: 5px;
 	}
 
 	#container > header nav a.active {
@@ -705,10 +705,11 @@ i.fa.fa-github.fa-2x:hover {
 	
 	.pattern article header p {
 		text-align: center;
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 20px;
 	}
-
+	
+	/*== Footer ==*/
 	footer {
 		margin-top: 7px;
 	}
