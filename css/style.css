@@ -534,6 +534,11 @@ i.fa.fa-github.fa-2x:hover {
 	footer .letschat textarea {
 		width: 95%;
 	}
+
+	 /* NoMAD page */
+ 	img.nomad {
+ 		width: 60%;
+	}
 }
 
 /* 630px or smaller */
