@@ -6,7 +6,8 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
 	line-height: 1;
-	background-color: #edefed; 
+	background: url('../images/background.jpg') center;
+	background-size: 1000px;
 }
 
 *, *:before, *:after {
@@ -39,7 +40,7 @@ h1, h2 {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: normal;
 }
 
 h3 {
@@ -75,18 +76,18 @@ a.active {
 
 /* Fixed Nav-bar */
 #container > header {
-	background: #4c6166;
-	border-bottom: 5px solid #d0d0d0;
-	box-shadow: 0 1px 0 #b1b0b0;
+	background: #070a0f;
+	border: none;
 	height: 72px;
 	position: fixed;
-	z-index: 3;
 	width: 100%;
-	opacity: 0.8;
+	opacity: 0.7;
+	z-index: 1000;
+	-webkit-border-image: none;
 }
 
 a {
-	color: #000;
+	color: #aabdb1;
 	text-decoration: none;
 	transition: all 0.2s ease-in;
 	-webkit-transition: all 0.1s ease-in;
@@ -131,7 +132,7 @@ a:visited {
 }
 
 #container > header hgroup h2 {
-	color: #000;
+	color: #cee1ef;
 	float: left;
 	line-height: 25px;
 	margin-right: 10px;
@@ -148,13 +149,14 @@ a:visited {
 
 #container > header nav a {
 	font: 28px/28px 'Open Sans Condensed', sans-serif;
+	color: #cee1ef;
 	letter-spacing: 1px;
 	line-height: 60px;
 	margin-left: 25px;
 	text-transform: uppercase;
 }
 
-#container > header nav a.active {
+#container > header nav a:hover {
 	color: #E0b964;
 } 
 
@@ -181,7 +183,7 @@ img.highlight {
 	top:0; bottom:0; left:0; right:0;
 	margin: 0 auto;
     height: 400px;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 .cloudyday img {
@@ -247,7 +249,7 @@ img.cloud-2 {
 }
 
 .pattern article:hover {
-	background: #4c6166;
+	background: #070a0f;
 	transition: 0.1s ease-in;
 }	
 
@@ -264,7 +266,7 @@ img.cloud-2 {
 }
 
 .pattern article header .details {
-	background: #4c6166;
+	background: #070a0f;
 	padding: 15px 0;
 	position: absolute;
 	top: 170px;
@@ -326,7 +328,7 @@ img.cloud-2 {
 
 /* Footer Appearance */
 footer {
-	background-color: #4c6166;
+	background: url('../images/gradient.jpg') center no-repeat;
 	border-top: 5px solid #d0d0d0;
 	box-shadow: 0 -1px 0 #b1b0b0;
 	padding: 30px 0px 0 0;
@@ -338,6 +340,7 @@ footer {
 
 footer h1 {
 	margin-bottom: 20px;
+	color: #aabdb1;
 }
 
 /* Footer About */
@@ -349,7 +352,8 @@ footer .about {
 
 footer .about p {
 	color: #edefed;
-	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
 	line-height: 20px;
 	margin-bottom: 15px;
 	font-weight: 200;
@@ -390,7 +394,7 @@ input.submit {
     font: 16px/16px 'Open Sans Condensed', sans-serif;
     padding: 5px;
     margin-top: 6px;
-    background-color: #73868a;
+    background-color: #56585a;
     border: 3px solid #edefed;
     border-radius: 70px;
     color: #edefed;
@@ -400,6 +404,7 @@ input.submit {
 
 input.submit:hover {
 	color: #E0b964;
+	background-color: #60594b;
 	border: 3px solid #E0b964;
 }
 
@@ -412,7 +417,7 @@ i.fa.fa-linkedin.fa-2x,
 i.fa.fa-behance.fa-2x, 
 i.fa.fa-github.fa-2x {
  	display: inline-block;
- 	background-color: #73868a;
+ 	background-color: #56585a;
     border: 3px solid #edefed;
     border-radius: 4rem;
     width: 4rem;
@@ -429,6 +434,7 @@ i.fa.fa-behance.fa-2x:hover,
 i.fa.fa-github.fa-2x:hover {
  	color: #E0b964;
  	border: 3px solid #E0b964;
+ 	background-color: #60594b;
  	cursor: pointer;
  }
 
@@ -501,7 +507,7 @@ i.fa.fa-github.fa-2x:hover {
 	}
 
 	.pattern article {
-		background-color: #4c6166;
+		background-color: #070a0f;
 	}
 
 	.pattern article:nth-child(3n+1) {
@@ -557,7 +563,7 @@ i.fa.fa-github.fa-2x:hover {
 		float: left;
 		display: block;
 		margin: 0;
-		padding-left: 140px;
+		padding-left: 130px;
 	}
 
 	#container > header nav a {
@@ -566,14 +572,17 @@ i.fa.fa-github.fa-2x:hover {
 		margin-left: 10px;
 	}
 
-	#container > header nav a.active {
-		color: #000;
+	#container > header nav a.work {
 		margin-left: 0;
-	} 
+	}
 
 	#container > header hgroup {
 		line-height: 40px;
 		height: 40px;
+		padding-left: 0;
+		text-align: center;
+		width: 100%;
+		padding-left: 130px;
 	}
 
 	#container > header hgroup h1 {
@@ -591,7 +600,7 @@ i.fa.fa-github.fa-2x:hover {
 	}
 
 	img.cloud-1, img.cloud-2, img.cloud-3, img.cloud-4 {
-		max-height: 250px;
+		max-height: 200px;
 	}
 
 	/*== Grid Appearance ==*/
@@ -607,7 +616,8 @@ i.fa.fa-github.fa-2x:hover {
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 		box-sizing: border-box;         /* Opera/IE 8+ */
-		background-color:  #edefed;
+		background: url('../images/background.jpg') center;
+		background-size: 1000px;
 		border: 0;
 		border-bottom: 1px dotted #dcdcdc;
 		border-radius: 0;
@@ -650,7 +660,7 @@ i.fa.fa-github.fa-2x:hover {
 		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 		box-sizing: border-box;         /* Opera/IE 8+ */
 		background: #d0d0d0;
-		border: 1px solid #b9b9b9;
+		border: 1px solid #a5a5a5;
 		border-radius: 50%;
 		display: inline-block;
 		padding: 4px;
@@ -683,14 +693,13 @@ i.fa.fa-github.fa-2x:hover {
 		-o-mask-image: none;
 		-moz-mask-image: none;
 		position: absolute;
-		left: 45%;
+		left: 42%;
 		top: 10%;
 		width: 55%;
 		height: auto;
 	}
 			
 	.pattern article header .details {
-		background: none;
 		background: none;
 		padding: 0;
 		position: relative;
@@ -705,18 +714,21 @@ i.fa.fa-github.fa-2x:hover {
 		top: 0;
 	}
 
-	.pattern article header h1 {
-		font-size: 40px;
-		line-height: 40px;
+	.pattern article header .details h3 {
+		font-size: 24px;
+		line-height: 20px;
 		margin-bottom: 5px;
+		color: #070a0f;
 	}
 	
-	.pattern article header p {
+	.pattern article header .details p {
 		text-align: center;
 		font-size: 16px;
 		line-height: 16px;
+		color: #070a0f;
 	}
-
+	
+	/*== Footer ==*/
 	footer {
 		margin-top: 7px;
 	}
@@ -748,7 +760,4 @@ i.fa.fa-github.fa-2x:hover {
 /* Portfolio with 1 column layout */
 @media only screen and (max-width: 480px) {
 	
-	#container > header nav {
-		display: none;
-	}
 }
