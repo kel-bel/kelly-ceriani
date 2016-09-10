@@ -191,30 +191,117 @@ img.highlight {
 	left: 0;
 }
 
+/*== Animations ==*/
 img.cloud-1, img.cloud-2, img.cloud-3, img.cloud-4 {
     height: 50rem;
     width: 100%;
-    animation-name: cloudsTest;
+}
+
+img.cloud-1 {
+	animation-name: cloudOneMove;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	animation-duration: 20s;
 	animation-direction: alternate;
 }
 
-@keyframes cloudsTest {
+img.cloud-2 {
+	animation-name: cloudTwoMove;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	animation-direction: alternate;
+}
+
+img.cloud-3 {
+	animation-name: cloudThreeMove;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+	animation-direction: alternate;
+}
+
+img.cloud-4 {
+	animation-name: cloudFourMove;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	animation-direction: alternate;
+}
+
+@keyframes cloudOneMove {
   0% {
-  opacity:0;
+  	bottom: 0px;
+  	top: 20px;
+  }
+  33% {
+  	bottom: 20px;
+  	top: 25px;
+  }
+  66% {
+  	bottom: 25px;
+  	top: 40px;
+  }
+  100% {
+  	bottom: 40px;
+  	top: 55px;
+  }
 }
-45% {
-opacity:0.3;
+@keyframes cloudTwoMove {
+  0% {
+  	bottom: 0px;
+  	top: 10px;
+  }
+  33% {
+  	bottom: 10px;
+  	top: 30px;
+  }
+  66% {
+  	bottom: 30px;
+  	top: 40px;
+  }
+  100% {
+  	bottom: 40px;
+  	top: 50px;
+  }
 }
-55% {
-opacity:0.5;
+@keyframes cloudThreeMove {
+  0% {
+  	bottom: 0px;
+  	top: 10px;
+  }
+  33% {
+  	bottom: 10px;
+  	top: 35px;
+  }
+  66% {
+  	bottom: 35px;
+  	top: 55px;
+  }
+  100% {
+  	bottom: 55px;
+  	top: 75px;
+  }
 }
-100% {
-opacity:1;
+@keyframes cloudFourMove {
+  0% {
+  	bottom: 0px;
+  	top: 20px;
+  }
+  33% {
+  	bottom: 20px;
+  	top: 25px;
+  }
+  66% {
+  	bottom: 25px;
+  	top: 35px;
+  }
+  100% {
+  	bottom: 35px;
+  	top: 50px;
+  }
 }
-}
+
 
 img.cloud-2 {
 	transform: translate(0,-1350px);
