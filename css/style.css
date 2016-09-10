@@ -6,7 +6,7 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
 	line-height: 1;
-	background: url('../images/background.jpg') center;
+	background: url('../images/background.JPG') center;
 	background-size: 1000px;
 }
 
@@ -415,7 +415,7 @@ img.cloud-2 {
 
 /* Footer Appearance */
 footer {
-	background: url('../images/gradient.jpg') center no-repeat;
+	background: url('../images/gradient.JPG') center no-repeat;
 	border-top: 5px solid #d0d0d0;
 	box-shadow: 0 -1px 0 #b1b0b0;
 	padding: 30px 0px 0 0;
