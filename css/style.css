@@ -699,7 +699,7 @@ i.fa.fa-github.fa-2x:hover {
 	}
 
 	img.cloud-1, img.cloud-2, img.cloud-3, img.cloud-4 {
-		max-height: 200px;
+		display: none;
 	}
 
 	/*== Grid Appearance ==*/
