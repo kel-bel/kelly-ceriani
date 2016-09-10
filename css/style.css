@@ -650,17 +650,29 @@ i.fa.fa-github.fa-2x:hover {
 		float: left;
 		display: block;
 		margin: 0;
-		padding-left: 130px;
+		padding-left: 110px;
 	}
 
 	#container > header nav a {
 		line-height: 20px;
 		font-size: 20px;
-		margin-left: 10px;
+		margin-left: 2px;
 	}
 
 	#container > header nav a.work {
 		margin-left: 0;
+	}
+	
+	#container > header hgroup:before {
+	background: url('../images/quill-logo-finished-smaller.png') center 4px no-repeat;
+	border: none;
+	content: '';
+	height: 100px;
+	padding: 5px;
+	position: absolute;
+	left: 0px;
+	top: -20px;
+	width: 100px;
 	}
 
 	#container > header hgroup {
@@ -669,7 +681,7 @@ i.fa.fa-github.fa-2x:hover {
 		padding-left: 0;
 		text-align: center;
 		width: 100%;
-		padding-left: 130px;
+		padding-left: 110px;
 	}
 
 	#container > header hgroup h1 {
@@ -771,6 +783,10 @@ i.fa.fa-github.fa-2x:hover {
 	}
 
 	.patter article img.clr {
+		display: none;
+	}
+	
+	.patter article:hover img.clr {
 		display: none;
 	}
 
