@@ -132,7 +132,7 @@ a:visited {
 }
 
 #container > header hgroup h2 {
-	color: #cee1ef;
+	color: #E5E5E5;
 	float: left;
 	line-height: 25px;
 	margin-right: 10px;
@@ -149,7 +149,7 @@ a:visited {
 
 #container > header nav a {
 	font: 28px/28px 'Open Sans Condensed', sans-serif;
-	color: #cee1ef;
+	color: #E5E5E5;
 	letter-spacing: 1px;
 	line-height: 60px;
 	margin-left: 25px;
@@ -182,7 +182,7 @@ img.highlight {
    	display: block;
 	top:0; bottom:0; left:0; right:0;
 	margin: 0 auto;
-    height: 400px;
+    width: 800px;
     margin-top: 160px;
 }
 
@@ -280,6 +280,7 @@ img.cloud-4 {
   	opacity: 0.8;
   }
 }
+
 
 img.cloud-2 {
 	transform: translate(0,-1350px);
@@ -405,7 +406,7 @@ footer {
 
 footer h1 {
 	margin-bottom: 20px;
-	color: #aabdb1;
+	color: #E0b964;
 }
 
 /* Footer About */
@@ -442,7 +443,7 @@ footer .letschat {
 }
 
 footer .letschat form > h2 {
-	color: #E0b964;
+	color: #E5E5E5;
 	font-size: 16px;
 }
 
@@ -546,15 +547,16 @@ i.fa.fa-github.fa-2x:hover {
 
 	/* == Masthead Image ==*/
 	.masthead {
-		max-height: 500px;
+		max-height: 400px;
 	}
 
 	img.highlight {
 		margin-top: 80px;
+		width: 70%;
 	}
 
 	img.cloud-1, img.cloud-2, img.cloud-3, img.cloud-4 {
-		max-height: 500px;
+		max-height: 400px;
 	}
 
 	/* == Grid Pattern Projects ==*/
@@ -677,7 +679,7 @@ i.fa.fa-github.fa-2x:hover {
 	}
 
 	img.cloud-1, img.cloud-2, img.cloud-3, img.cloud-4 {
-		display: none;
+		max-height: 200px;
 	}
 
 	/*== Grid Appearance ==*/
