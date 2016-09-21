@@ -886,6 +886,11 @@ i.fa.fa-github.fa-2x:hover {
 	.aboutsection {
     	padding: 200px 5px;
 	}
+
+	/*== Thesis Documentation Page ==*/
+	.mastheadthesis {
+		height: 300px;
+	}	
 }
 
 
