@@ -393,7 +393,7 @@ footer {
 	padding: 30px 0px 0 0;
 	overflow: auto;
 	position: relative;
-	height: 500px;
+	height: 550px;
 	width: 100%;
 }
 
@@ -497,7 +497,7 @@ i.fa.fa-github.fa-2x:hover {
  	cursor: pointer;
  }
 
- /* NoMAD page */
+ /* <====== About Page =====================================> */
  img.nomad {
  	width: 800px;
  	display: block;
@@ -511,6 +511,26 @@ i.fa.fa-github.fa-2x:hover {
 	color: #2C2C54;
 	text-transform: none;
 	font-size: 20px;
+}
+
+/* <====== About Page =====================================> */
+.aboutsection {
+    padding: 250px 10px;
+}
+
+.aboutsection h1 {
+	color: #E0b964;
+	font-size: 46px;
+	text-align: center;
+	padding: 25px;
+}
+
+.aboutsection p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	line-height: 22px;
+	padding: 10px;
 }
 
 /* <====== Media Queries =====================================> */
@@ -827,6 +847,11 @@ i.fa.fa-github.fa-2x:hover {
 
 	footer .about, footer .letschat {
 		margin-top: 6px;
+	}
+
+	/*== About Page ==*/
+	.aboutsection {
+    	padding: 200px 5px;
 	}
 }
 
