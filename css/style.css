@@ -497,7 +497,7 @@ i.fa.fa-github.fa-2x:hover {
  	cursor: pointer;
  }
 
- /* <====== About Page =====================================> */
+ /* <====== Nomad Page =====================================> */
  img.nomad {
  	width: 800px;
  	display: block;
@@ -531,6 +531,38 @@ i.fa.fa-github.fa-2x:hover {
 	text-align: center;
 	line-height: 22px;
 	padding: 10px;
+}
+
+/* <====== Thesis Documentation Page =====================================> */
+.mastheadthesis {
+	background-image: url('../images/thesis-documentation-pic.JPG'); 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	overflow: hidden;
+	height: 500px;
+}
+
+.thesisdescription {
+    padding: 80px 10px;
+}
+
+.thesisdescription h1 {
+	color: #E0b964;
+	font-size: 35px;
+	padding-bottom: 15px;
+}
+
+.thesisdescription p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 10px;	
+}
+
+.thesisdescription a {
+	color: #E0b964;
 }
 
 /* <====== Media Queries =====================================> */
