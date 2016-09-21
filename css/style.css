@@ -566,6 +566,88 @@ i.fa.fa-github.fa-2x:hover {
 	color: #E0b964;
 }
 
+/* <====== Liovinci Page =====================================> */
+.whole {
+	padding: 80px 10px;
+}
+
+.whole .leftcolumn {
+	width: 66%;
+	float: left;
+	padding: 0;
+	overflow: hidden;
+	margin-top: 100px;
+	height: 560px;
+}
+
+img.wireframe1 {
+	width: 100%;
+}
+
+img.wireframe2, img.wireframe3 {
+	width: 60%;
+	display:block;
+	top:0;bottom:0; left:0;right:0;
+	margin: 0 auto;
+}
+
+.whole .rightcolumn {
+	width: 34%;
+	float:right;
+	padding: 5px;
+	margin-top: 100px;
+	height: 560px;
+}
+
+
+.whole .rightcolumn p {
+	padding: 12px;
+	font-family: 'Raleway', sans-serif;
+	font-size:16px;
+}
+
+.liovincibutton {
+	text-align: center;
+}
+
+button.liovinci {
+	background-color: #2e9fe5;
+	border: 1px solid #2e9fe5;
+	border-radius: 10px;
+	height: 60px;
+	width: 300px;
+}
+
+button.liovinci a {
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+img.liovinciicon {
+	height: 50px;
+	padding-right: 10px;
+}
+
+.whole .leftcolumn2 {
+	width: 50%;
+	float: left;
+	padding: 0;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.whole .rightcolumn2 {
+	width: 50%;
+	float:right;
+	overflow: hidden;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+
+
 /* <====== Media Queries =====================================> */
 
 /* 960px or smaller */
@@ -660,6 +742,27 @@ i.fa.fa-github.fa-2x:hover {
 	 /* NoMAD page */
  	img.nomad {
  		width: 60%;
+	}
+
+	/* Liovinci Page */
+	.whole {
+		padding: 80px 5px;
+	}
+
+	.whole .leftcolumn {
+		width: 100%;
+		height: 650px;
+		margin-top: 20px;
+	}
+
+	.whole .rightcolumn {
+		width: 100%;
+		height: 350px;
+		margin-top: 20px;
+	}
+
+	.whole .rightcolumn h1 {
+		text-align: center;
 	}
 }
 
@@ -891,6 +994,35 @@ i.fa.fa-github.fa-2x:hover {
 	.mastheadthesis {
 		height: 300px;
 	}	
+
+	/* Liovinci Page */
+	.whole {
+		padding: 5px;
+	}
+
+	.whole .leftcolumn {
+		width: 100%;
+		height: 300px;
+		margin-top: 20px;
+	}
+
+	.whole .rightcolumn {
+		width: 100%;
+		height: 460px;
+		margin-top: 20px;
+	}
+
+	.whole .rightcolumn h1 {
+		text-align: center;
+	}
+
+	.whole .leftcolumn2 {
+		width: 100%;
+	}
+
+	.whole .rightcolumn2 {
+		width: 100%;
+	}
 }
 
 
