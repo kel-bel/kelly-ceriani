@@ -891,6 +891,10 @@ img.capture3 {
 	}
 
 	.bmcfimages {
+		height: 350px;
+	}
+
+	.bmcfimages img {
 		width: 100%;
 	}
 }
@@ -1148,6 +1152,13 @@ img.capture3 {
 	.whole .rightcolumn2 {
 		width: 100%;
 	}
+
+	/* BMCF Page */
+	.bmcfimages {
+		height: 150px;
+		padding: 0;
+	}
+
 }
 
 
