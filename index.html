@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Kelly Ceriani | Storytelling Developer/Designer</title>
 	<link rel="shortcut icon" type="image/x-icon"  href="images/shortcut.png">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Sacramento" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -19,201 +20,208 @@
 			<div class="width">
 				<a href="index.html">
 					<hgroup>
+						<img src="images/logo1.png" class="logo">
 						<h1>Kelly Ceriani</h1>
-						<div class="description">
-							<h2>Storytelling Developer|Designer</h2>
-						</div>
 					</hgroup>
 				</a>
-				<nav>
-					<a href="about.html" class="about">about</a>
+				<div class="menu-btn">
+					<button type="button" class="nav-handle"><img src="images/menu-icon.png" class="hamburger"></button> 
+				</div>
+				<nav class="responsive-menu">
+					<div class="close-btn"><img src="images/close-btn.png" class="theX"></div>
+					<a href="#aboutDescription" class="about">about</a>
 					<a href="#pattern" class="work">work</a>
 					<a href="#letschat" id="contact">contact</a>
+					<a href="" id="blog">blog</a>
 				</nav>
 			</div>
 		</header>
 
 		<section class="masthead">
 			<div class="cloudyday">
-				<img class="highlight" src="images/imagine-the-possibilities3.png">
-				<img class="cloud-1" src="images/cloud-1.png">
-				<img class="cloud-3" src="images/cloud3.png">
-				<img class="cloud-2" src="images/cloud2.png">
-				<img class="cloud-4" src="images/cloud4.png">
+				<div class="catchPhrase">
+					<h1>Imagine the Possibilites</h1>
+					<h4>"Sometimes I've believed as many as six impossible things before breakfast."</h4>
+					<h4>-Lewis Carroll</h4>
+				</div>
+				<div class="scrollDown" id="scrollDown">
+					<a href="#aboutDescription" id="scroll"><img src="images/scrollarrow.png" class="scrollArrow" id="scrollArrow"></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="aboutDescription" id="aboutDescription">
+			<div class="expanding">
+				<button type="button" class="expand-btn"><h2>about me</h2><img src="images/expand-arrow.png" class="expander"></button> 
+			</div>
+			<div class="implode">
+				<button type="button" class="implode-btn"><h2>close</h2><img src="images/implode-arrow.png" class="imploder"></button> 
+			</div>
+			<div class="threelilDescriptions">
+				<div class="eachArticle" id="descriptorBox">
+					<img src="images/quill-logo.jpg" class="quill">
+					<h2>Storyteller</h2>
+					<hr>
+				</div>
+				<div class="eachArticle" id="descriptorBox">
+					<img src="images/architect.jpg" class="quill">
+					<h2>Designer</h2>
+					<hr>
+				</div>
+				<div class="eachArticle" id="descriptorBox">
+					<img src="images/rocket.jpg" class="quill">
+					<h2>Developer</h2>
+					<hr>
+				</div>
+			</div>
+			<div class="mydescription">
+					<p>Yes, you can be all three! In any good fiction story the imagination runs wild with limitless possibilities creating a dashing hero and a conniving villain all in a world of its own. And that is what I seek to provide for my users. I believe every good webpage, app, or graphic has been crafted to tell a story about that company or product.  </p>
+					<p>My story begins with me as a child never going anywhere for long without a sketchbook. (I skittered briefly from the path in high school desiring as every teen did to become a marine biologist…) My college years were dedicated to the study of architecture during which I spent a full year gallivanting throughout Europe enjoying so many of those classic history book sites. With that unique experience came the inspiration for the app noMAD which upon completion will benefit travelers all over the world. </p>
+					<p>After already learning so much about user experience and web development I am constantly seeking those Everest sized challenges to help me learn even more about design and development. I am always stocked with new ideas and am geared and ready to face any villain!</p>
+					<p>So even if I seem a little quiet you are forewarned my imagination is quite loud!</p>  
+			</div> 
+			<div class="implode">
+				<button type="button" class="implode-btn"><h2>close</h2><img src="images/implode-arrow.png" class="imploder"></button> 
+			</div>
+		</section>
+
+		<section class="divider">
+			<div class="myImageDivider">
 			</div>
 		</section>
 	
-		<section class="pattern">
-			<div id="pattern" class="width">
-				<article>
-					<a href="bmcf.html" class="item">
-						<header>
-							<div class="details">
-								<h3>Blacksburg Museum & Cultural Foundation</h3>
-								<p>Wordpress, Web Design</p>
-							</div>
-						</header>
+		<section class="pattern" id="pattern">
+			<div class="width">
+				<div class="eachArticle">
+					<a href="https://www.liovinci.com/" class="item">
 						<div class="photo">
-							<div class="bw-pic">
-								<img src="images/bmcf-bw.jpg" alt="BM+CF" class="bw">
-							</div>
-							<div class="clr-pic">
-								<img src="images/bmcf-clr.jpg" alt="BM+CF" class="clr">
-							</div>
-						</div>
-					</a>
-				</article>
-				<article>
-					<a href="thesisdocumentation.html" class="item">
-						<header>
-							<div class="details">
-								<h3>I speak for the shadows</h3>
-								<p>Thesis Documentation</p>
-							</div>
-						</header>
-						<div class="photo">
-							<div class="bw-pic">
-								<img src="images/charcoal-bw.jpg" alt="Charcoal" class="bw">
-							</div>
-							<div class="clr-pic">
-								<img src="images/charcoal-bw.jpg" alt="Charcoal" class="clr">
-							</div>
-						</div>
-					</a>
-				</article>
-				<article>
-					<a href="liovinci.html" class="item">
-						<header>
+							<img src="images/liovinci-clr.jpg" alt="BM+CF" class="bw">
 							<div class="details">
 								<h3>Liovinci</h3>
 								<p>UI/UX Designer</p>
 							</div>
-						</header>
-						<div class="photo">
-							<div class="bw-pic">
-								<img src="images/liovinci-bw.jpg" alt="BM+CF" class="bw">
-							</div>
-							<div class="clr-pic">
-								<img src="images/liovinci-clr.JPG" alt="BM+CF" class="clr">
-							</div>
 						</div>
 					</a>
-				</article>
-				<article>
-					<a href="#" class="item">
-						<header>
+				</div>
+				<div class="eachArticle">
+					<a href="http://blacksburgmuseum.org/" class="item">
+						<div class="photo">
+							<img src="images/bmcf-bw.jpg" alt="BM+CF" class="bw" width="554" height="410">
 							<div class="details">
-								<h3>Kelly Ceriani Storytelling Developer|Designer</h3>
-								<p>Web Developer, Designer</p>
-							</div>
-						</header>
-						<div class="photo">
-							<div class="bw-pic">
-								<img src="images/portfoliowebsite-bw.JPG" alt="Portfolio Website" class="bw">
-							</div>
-							<div class="clr-pic">
-								<img src="images/portfoliowebsite-clr.jpg" alt="Portfolio Website" class="clr">
+								<h3>Blacksburg Museum & Cultural Foundation</h3>
+								<p>Wordpress, Web Design</p>
 							</div>
 						</div>
 					</a>
-				</article>
-					<article>
-					<a href="https://issuu.com/kellyceriani/docs/a_short_excerpt_of_travels_through_" class="item">
-						<header>
+				</div>
+				<div class="eachArticle" id="otherBox">
+					<a href="#about" class="item">
+						<div class="details" id="otherBoxDetails">
+								<h3>Hello!</h3>
+								<p>Looking for a freelance designer or developer? Looking for a unique style that's simplistic and user friendly?</p>
+								<p>I'm available now!</p>
+								<p>Contact me through the form below!</p>
+						</div>
+					</a>
+				</div>
+				<div class="eachArticle">
+					<a href="https://issuu.com/kellyceriani/docs/thesis_documentation-kelly_ceriani" class="item">
+						<div class="photo">
+							<img src="images/charcoal-bw.jpg" alt="Charcoal" class="bw">
 							<div class="details">
-								<h3>A short excerpt of travels throughout europe</h3>
-								<p>Book Designer & Artist</p>
-							</div>
-						</header>
-						<div class="photo">
-							<div class="bw-pic">
-								<img src="images/travel-bw.jpg" alt="Travel Sketches" class="bw">
-							</div>
-							<div class="clr-pic">
-								<img src="images/travel-bw.jpg" alt="Travel Sketches" class="clr">
+								<h3>I speak for the shadows</h3>
+								<p>Architectural Thesis Documentation</p>
 							</div>
 						</div>
 					</a>
-				</article>
-				<article>
-					<a href="https://issuu.com/kellyceriani/docs/kelly_ceriani_s_architecture_portfo/1?e=16972232/30000297" class="item">
-						<header>
-							<div class="details">
-								<h3>Undergraduate Architecture Portfolio</h3>
-								<p>Architect</p>
-							</div>
-						</header>
-						<div class="photo">
-							<div class="bw-pic">
-								<img src="images/portfolio-bw.jpg" alt="Architecture Portfolio" class="bw">
-							</div>
-							<div class="clr-pic">
-								<img src="images/portfolio-clr.jpg" alt="Architecture Portfolio" class="clr">
-							</div>
-						</div>
-					</a>
-				</article>
-				<article>
-					<a href="https://kel-bel.github.io/shopping-list-app/index.html" class="item">
-						<header>
-							<div class="details">
-								<h3>Shopping List App</h3>
-								<p>Designer and Developer</p>
-							</div>
-						</header>
-						<div class="photo">
-							<div class="bw-pic">
-								<img src="images/shopping-list-app-bw.jpg" alt="Shopping List App" class="bw">
-							</div>
-							<div class="clr-pic">
-								<img src="images/shopping-list-app-clr.jpg" alt="Shopping List App" class="clr">
-							</div>
-						</div>
-					</a>
-				</article>
-				<article>
+				</div>
+				<div class="eachArticle">
 					<a href="nomad.html" class="item">
-						<header>
+						<div class="photo">
+							<img src="images/nomad-bw.jpg" alt="Architecture Portfolio" class="bw">
 							<div class="details">
 								<h3>noMAD</h3>
 								<p>Creator, Designer, and Developer</p>
 							</div>
-						</header>
+						</div>
+					</a>
+				</div>
+				<div class="eachArticle">
+					<a href="https://kel-bel.github.io/placing-pics/index.html" class="item">
 						<div class="photo">
-							<div class="bw-pic">
-								<img src="images/nomad-bw.jpg" alt="Architecture Portfolio" class="bw">
-							</div>
-							<div class="clr-pic">
-								<img src="images/nomad-clr.jpg" alt="Architecture Portfolio" class="clr">
+							<img src="images/placing-pics-bw.jpg" alt="PlacingPics" class="bw" width="554" height="410">
+							<div class="details">
+								<h3>Placing Pics</h3>
+								<p>Designer & Developer</p>
 							</div>
 						</div>
 					</a>
-				</article>
-							
+				</div>
+				<div class="eachArticle">
+					<a href="https://issuu.com/kellyceriani/docs/a_short_excerpt_of_travels_through_" class="item">
+						<div class="photo">
+							<img src="images/travel-bw.jpg" alt="Travel Sketches" class="bw">
+							<div class="details">
+								<h3>A short excerpt of travels throughout europe</h3>
+								<p>Book Designer & Artist</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="eachArticle" id="otherBox">
+					<a href="#about" class="item">
+						<div class="details" id="otherBoxDetails">
+								<h3>A SHORT STORY</h3>
+								<p>She had an appointment. Every second waiting for it was a second lost. Her watched ticked and her foot tapped; but only one sped up.</p>
+						</div>
+					</a>
+				</div>
+				<div class="eachArticle">
+					<a href="https://issuu.com/kellyceriani/docs/kelly_ceriani_s_architecture_portfo/1?e=16972232/30000297" class="item">
+						<div class="photo">
+							<img src="images/portfolio-clr.jpg" alt="Architecture Portfolio" class="bw">
+							<div class="details">
+								<h3>Undergraduate Architecture Portfolio</h3>
+								<p>Architectural Portfolio & Book Designer</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="eachArticle">
+					<a href="#" class="item">
+						<div class="photo">
+							<img src="images/portfoliowebsite-bw.JPG" alt="Portfolio Website" class="bw">
+							<div class="details">
+								<h3>Kelly Ceriani Storytelling Developer|Designer</h3>
+								<p>Web Developer & Designer</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="eachArticle">
+					<a href="https://kel-bel.github.io/shopping-list-app/index.html" class="item">
+						<div class="photo">
+							<img src="images/shopping-list-app-clr.jpg" alt="Shopping List App" class="bw">
+							<div class="details">
+								<h3>Shopping List App</h3>
+								<p>Designer and Developer</p>
+							</div>
+						</div>
+					</a>
+				</div>
+										
 			</div>	
 		</section>
 
 	</div>	
 
 	<footer>
-		<div class="width">
+		<div class="width" id="footerWidth">
 			<div id="about" class="about"> 
 				<h1>about</h1>
 				<p>Hello! With a degree in architecture and design I revel in the challenge of crafting functional and innovative user engaging designs.</p>
 				<p>While implementing my clients’ desires my design seeks to actively implement new concepts, dreams, and creative solutions. I am a dedicated and hardworking designer seeking to apply my abilities into developing new design identities.</p>
 				<p>I'm always looking for a new challenge. Let's work together!</p>
-				<h1>connect with me</h1>
-					<div class="icons">
-						<a href="https://www.linkedin.com/in/kellyceriani" class="linkedin">
-							<i class="fa fa-linkedin fa-2x"></i>
-						</a>	
-						<a href="https://www.behance.net/kelly5" class="behance">
-							<i class="fa fa-behance fa-2x"></i>
-						</a>
-						<a href="https://github.com/kel-bel" class="github">
-							<i class="fa fa-github fa-2x"></i>
-						</a>
-					</div>
 			</div>
 			<div id="letschat" class="letschat">
 				<h1>lets have a chat!</h1>
@@ -229,6 +237,20 @@
 						<br>
 						<input class="submit" name="submit" type="submit" value="Email me!"> 
 					</form>
+			</div>
+			<div class="connect">
+				<h1>connect with me</h1>
+					<div class="icons">
+						<a href="https://www.linkedin.com/in/kellyceriani" class="linkedin">
+							<i class="fa fa-linkedin fa-2x"></i>
+						</a>	
+						<a href="https://www.behance.net/kelly5" class="behance">
+							<i class="fa fa-behance fa-2x"></i>
+						</a>
+						<a href="https://github.com/kel-bel" class="github">
+							<i class="fa fa-github fa-2x"></i>
+						</a>
+					</div>
 			</div>
 		</div>
 	</footer>
