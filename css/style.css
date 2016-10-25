@@ -276,7 +276,7 @@ a.active {
 	float: left;
 	position: relative;
 	width: 100%;
-	padding: 80px 80px;
+	padding: 90px 90px;
 }
 
 .eachArticle {
@@ -314,8 +314,8 @@ a.active {
 	z-index: 2;
 	top:0;bottom:0;left:0;right:0;
 	margin: 60px auto;
-	width: 320px;
-	height:280px;
+	width: 68%;
+	height:70%;
 	padding: 10px;
 	text-align: center;
 	display: none;
