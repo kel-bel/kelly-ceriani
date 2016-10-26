@@ -369,12 +369,12 @@ footer {
 #footerWidth {
 	top:0;bottom:0;right:0;left:0;
 	margin: 0 auto;
-	width:82%;
+	width:85%;
 }
 
 /* Footer About */
 footer .about {
-	width: 500px;
+	width: 450px;
 	float: left;
 	padding: 10px;
 }
@@ -400,7 +400,7 @@ footer .connect.icons {
 footer .letschat {
 	padding: 0;
 	position: relative;
-	width: 450px;
+	width: 400px;
 	float: left;
 	margin-bottom: 40px;
 	padding: 10px;
@@ -412,7 +412,7 @@ footer .letschat form > h2 {
 }
 
 input {
-	width: 400px;
+	width: 380px;
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-radius: 5px;
@@ -433,7 +433,7 @@ input.submit {
 }
 
 textarea {
-	width: 400px;
+	width: 380px;
 }
 
 /* Social Icons */
