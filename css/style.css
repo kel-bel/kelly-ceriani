@@ -513,55 +513,43 @@ input.submit:hover {
 }
 
 /* <====== Liovinci Page =====================================> */
-.whole {
-	padding: 80px 10px;
-}
-
-.whole .leftcolumn {
-	width: 66%;
+.leftcolumn, .rightcolumn, .justImage  {
+	width: 33%;
 	float: left;
 	padding: 0;
 	overflow: hidden;
-	margin-top: 60px;
+	margin: 90px 0px;
 }
 
-img.wireframe1 {
-	width: 100%;
-}
-
-img.wireframe2, img.wireframe3 {
-	width: 60%;
+img.wireframe {
+	width: 40%;
 	display:block;
 	top:0;bottom:0; left:0;right:0;
 	margin: 0 auto;
 }
 
-.whole .rightcolumn {
-	width: 34%;
-	float:right;
-	padding: 5px;
-	margin-top: 60px;
+img.wireframe1 {
+	width:100%;
+	display:block;
+	top:0;bottom:0; left:0;right:0;
+	margin: 0 auto;
 }
 
-.whole .rightcolumn h1 {
-	padding-left: 5px;
+.maintext {
+	float: left;
+	top:0;bottom:0;right:0;left:0;
+	margin:0 auto;
 }
 
-.whole .rightcolumn h2 {
-	font-size: 25px;
-	padding-left: 10px;
-	color: #E0b964;
+.textPart {
+	top:0;bottom:0;left:0;right:0;
+	display: block;
+	margin: 0 auto;
+	width: 70%;
 }
 
-.whole .rightcolumn p {
-	padding: 12px;
-	font-family: 'Raleway', sans-serif;
-	font-size:16px;
-}
-
-.liovincibutton {
-	text-align: center;
-	margin-bottom: 50px;
+.textPart p {
+	color: #131112;
 }
 
 button.liovinci {
@@ -570,6 +558,11 @@ button.liovinci {
 	border-radius: 10px;
 	height: 60px;
 	width: 300px;
+	top:0; bottom:0;right:0;left:0;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 40px;
+
 }
 
 button.liovinci a {
@@ -582,22 +575,6 @@ button.liovinci a {
 img.liovinciicon {
 	height: 50px;
 	padding-right: 10px;
-}
-
-.whole .leftcolumn2 {
-	width: 50%;
-	float: left;
-	padding: 0;
-	overflow: hidden;
-	margin-bottom: 20px;
-}
-
-.whole .rightcolumn2 {
-	width: 50%;
-	float:right;
-	overflow: hidden;
-	padding: 0;
-	margin-bottom: 20px;
 }
 
 /* <====== BMCF Page =====================================> */
