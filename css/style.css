@@ -373,20 +373,14 @@ footer {
 }
 
 /* Footer About */
-footer .about {
-	width: 450px;
+footer .about, footer .connect, footer .letschat {
+	width: 33%;
 	float: left;
 	padding: 10px;
 }
 
 footer .about p {
 	margin-bottom: 15px;
-	padding: 10px;
-}
-
-footer .connect {
-	width: 300px;
-	float: left;
 	padding: 10px;
 }
 
@@ -398,12 +392,8 @@ footer .connect.icons {
 
 /* Footer Lets have a chat */
 footer .letschat {
-	padding: 0;
 	position: relative;
-	width: 400px;
-	float: left;
 	margin-bottom: 40px;
-	padding: 10px;
 }
 
 footer .letschat form > h2 {
@@ -412,7 +402,7 @@ footer .letschat form > h2 {
 }
 
 input {
-	width: 380px;
+	width: 90%;
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-radius: 5px;
@@ -433,7 +423,7 @@ input.submit {
 }
 
 textarea {
-	width: 380px;
+	width: 90%;
 }
 
 /* Social Icons */
