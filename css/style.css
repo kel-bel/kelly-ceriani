@@ -273,6 +273,20 @@ a.active {
 	display: none;
 }
 
+/* Pattern Work Title */
+.work-title {
+	padding: 30px 0;
+}
+
+.work-title h1 {
+	padding: 10px 0;
+}
+
+.work-title hr {
+	margin: 0;
+	margin-right: 60%;  
+}
+
 /* Pattern Porfolio Field */
 .pattern {
 	float: left;
