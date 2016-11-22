@@ -299,7 +299,7 @@ a.active {
 	float: left;
 	overflow: hidden;
 	position: relative;
-	width: 33.3%;
+	width: 33.333%;
 	/*height: 400px;*/
 }
 
@@ -341,7 +341,7 @@ a.active {
 	transition: all 2s ease-in;
 	-webkit-transition: all 2s ease-in;
 	-moz-transition: all 2s ease-in;
-	-o-transition: all 2s ease-in;
+	-o-transition: all 2s ease-in; 
 }
 
 .eachArticle .photo:hover {
@@ -373,7 +373,7 @@ footer {
 	padding: 30px 0px 0 0;
 	overflow: auto;
 	position: relative;
-	height: 470px;
+	height: 500px;
 	width: 100%;
 }
 
@@ -396,18 +396,7 @@ footer .about p {
 	padding: 10px;
 }
 
-footer .connect.icons {
-	display: block;
-	top:0; bottom: 0; left:0; right: 0;
-	margin: 0 auto;
-}
-
 /* Footer Lets have a chat */
-footer .letschat {
-	position: relative;
-	margin-bottom: 40px;
-}
-
 footer .letschat form > h2 {
 	color: #E5E5E5;
 	font-size: 16px;
@@ -489,29 +478,46 @@ input.submit:hover {
 	background-size: cover;
 	z-index: -1;
 	overflow: hidden;
-	height: 500px;
+	height: 920px;
 	margin: 0;
 }
 
 .thesisdescription {
-    padding: 80px 10px;
+	background-color: #fff;
+    padding: 40px;
+    position: relative;
+	width: 30%;
+	float: right;
+	margin: 120px 20px;
 }
 
 .thesisdescription h1 {
-	color: #E0b964;
-	font-size: 35px;
 	padding-bottom: 15px;
 }
 
-.thesisdescription p {
-	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
-	line-height: 22px;
-	padding: 10px;	
+.thesisdescription p, .textDescription p {
+	color: #000;
 }
 
-.thesisdescription a {
-	color: #E0b964;
+.thesisdescription a, .textDescription a {
+	color: #8B80F9;
+	text-decoration: underline;
+}
+
+.readaboutthesis {
+	display: none;
+}
+
+.artpiece {
+	width: 33.3%;
+	margin: 30px 0;
+	float: left;
+}
+
+.centerit {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /* <====== Liovinci Page =====================================> */
@@ -762,10 +768,6 @@ img.capture3 {
 	}
 	
 	/* == About section ==*/
-	.eachArticle .quill {
-		height: 100px;
-		width: 40%;
-	}
 	.aboutDescription .eachArticle hr {
 		margin-top: 5px;
 	}
@@ -798,8 +800,7 @@ img.capture3 {
 		margin: 8px 0;
 	}
 	
-
-	/* == Pattern Section ==*/
+	/* == Grid Pattern Projects ==*/
 	.photo, .photo img {
 		width: 100%;
 	}
@@ -829,7 +830,7 @@ img.capture3 {
 	footer .about, footer .letschat, footer .connect {
 		width: 100%;
 	}
-	
+
 	footer .letschat input[type=text],
 	footer .letschat input[type="email"],
 	footer .letschat textarea {
@@ -860,6 +861,20 @@ img.capture3 {
 
 	.whole .rightcolumn h1, .whole .rightcolumn h2 {
 		text-align: center;
+	}
+
+	/*Thesis Page*/
+	.thesisdescription {
+		display: none;
+	}
+	.readaboutthesis {
+	display: unset;
+	}	
+	.textDescription {
+		padding: 20px;
+	}
+	.artpiece {
+		width: 100%;
 	}
 
 	/* BMCF page */
@@ -907,7 +922,7 @@ img.capture3 {
 	.eachArticle {
 		width: 50%;
 	}
-	
+
 	.eachArticle .photo .details h3{
 		font-size: 14px;
 		margin-top: 10%;
